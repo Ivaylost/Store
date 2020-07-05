@@ -1,0 +1,25 @@
+﻿@model ProductCreateBindingMode
+
+
+@{
+    ViewData["Title"] = "create";
+}
+
+<h1>Create product</h1>
+
+<form method="post">
+    <div>
+        <input asp-for="Name" class="form-control" type="text" placeholder="Name..." />
+    </div>
+
+    <div>
+        <input asp-for="Price" class="form-control" type="number" placeholder="0.00" />
+    </div>
+
+    <div>
+        <div>
+            <button type="submit" class="btn bg-eventures">Create Product</button>
+        </div>
+    </div>
+</form>
+
